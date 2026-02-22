@@ -11,7 +11,6 @@ import re
 import sys
 import requests
 import yaml
-from python_opdracht.main import url
 
 """ fetchen van de json data van de api url,
 met een timeout van 10 seconden en error handling voor eventuele http errors """
@@ -48,6 +47,7 @@ def build_output(data):
 Indien er een error optreedt bij het fetchen van de json data, wordt deze geprint naar stderr 
 en wordt het programma afgesloten met een error code."""
 if __name__ == "__main__":
+  url = "http://ip-api.com/json/syntra.be"
   try:
     data = fetch_json(url)
   except Exception as e:

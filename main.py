@@ -40,13 +40,12 @@ provider: combell
 
 """
 
+import sys
+import yaml
+
 url = "http://ip-api.com/json/syntra.be"
 
 "start van opdracht"
-
-
-import sys
-import yaml
 
 
 def main():
